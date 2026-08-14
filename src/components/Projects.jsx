@@ -1,58 +1,74 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
     {
-      title: 'Alike.io – Travel Creator Platform',
+      title: "Alike.io – Travel Creator Platform",
       description:
-        'Social travel booking marketplace developed with Dubai Tourism. Built and maintained custom UIs, booking portals, and onboarding flows.',
-      image: '/images/alike.png',
-      tech: ['Nuxt.js', 'Vue.js', 'Tailwind CSS', 'GraphQL'],
-      liveUrl: 'https://www.alike.io',
+        "Social travel booking marketplace developed with Dubai Tourism. Built and maintained custom UIs, booking portals, and onboarding flows.",
+      image: "/images/alike.png",
+      tech: ["Nuxt.js", "Vue.js", "Tailwind CSS", "GraphQL"],
+      liveUrl: "https://www.alike.io",
     },
     {
-      title: 'BuildItIndia – B2B Construction Ecosystem',
+      title: "BuildItIndia – B2B Construction Ecosystem",
       description:
-        'Handled frontend architecture for a construction procurement platform. Built full modules like product, order, category, and attribute management.',
-      image: '/images/builditindia.png',
-      tech: ['Vue.js', 'GraphQL', 'REST API', 'Tailwind CSS'],
-      liveUrl: 'https://builditindia.com/',
+        "Handled frontend architecture for a construction procurement platform. Built full modules like product, order, category, and attribute management.",
+      image: "/images/builditindia.png",
+      tech: ["Vue.js", "GraphQL", "REST API", "Tailwind CSS"],
+      liveUrl: "https://builditindia.com/",
     },
     {
-      title: 'PolicyLife – Insurance Comparison Tool',
+      title: "PolicyLife – Insurance Comparison Tool",
       description:
-        'Created dynamic forms and layouts using Directus CMS to help users compare and purchase insurance. Developed profile, quote, and policy flows.',
-      image: '/images/policylife.png',
-      tech: ['Nuxt.js', 'Vue.js', 'Directus'],
-      liveUrl: 'https://policylife.ca/',
+        "Created dynamic forms and layouts using Directus CMS to help users compare and purchase insurance. Developed profile, quote, and policy flows.",
+      image: "/images/policylife.png",
+      tech: ["Nuxt.js", "Vue.js", "Directus"],
+      liveUrl: "https://policylife.ca/",
     },
     {
-      title: 'Vepaar – WhatsApp Business Tool',
+      title: "Vepaar – WhatsApp Business Tool",
       description:
-        'Built a store management interface in the admin panel. Managed user CRUD, CRM workflows, and subscription upgrade flow.',
-      image: '/images/vepaar.png',
-      tech: ['Vue.js', 'Nuxt.js', 'Tailwind CSS', 'SCSS'],
-      liveUrl: 'https://www.vepaar.com',
+        "Built a store management interface in the admin panel. Managed user CRUD, CRM workflows, and subscription upgrade flow.",
+      image: "/images/vepaar.png",
+      tech: ["Vue.js", "Nuxt.js", "Tailwind CSS", "SCSS"],
+      liveUrl: "https://www.vepaar.com",
     },
     {
-      title: '7Span Corporate Site',
+      title: "7Span Corporate Site",
       description:
-        'Rebuilt the 7Span website using Nuxt 3 and TailwindCSS. Focused on responsive layout, reusable component architecture, and CMS integration.',
-      image: '/images/7span.png',
-      tech: ['Nuxt 3', 'Tailwind CSS', 'REST API', 'Directus'],
-      liveUrl: 'https://7span.com',
+        "Rebuilt the 7Span website using Nuxt 3 and TailwindCSS. Focused on responsive layout, reusable component architecture, and CMS integration.",
+      image: "/images/7span.png",
+      tech: ["Nuxt 3", "Tailwind CSS", "REST API", "Directus"],
+      liveUrl: "https://7span.com",
     },
     {
-      title: 'Keynull – Personal Portfolio',
+      title: "Keynull – Personal Portfolio",
       description:
-        'A modern personal portfolio built with Next.js and Tailwind CSS. Designed and developed to showcase projects and experience in a clean, responsive layout.',
-      image: '/images/keynull.png', 
-      tech: ['Next.js', 'React', 'Tailwind CSS'],
-      liveUrl: 'https://keynull.vercel.app/',
-    }
+        "A modern personal portfolio built with Next.js and Tailwind CSS. Designed and developed to showcase projects and experience in a clean, responsive layout.",
+      image: "/images/keynull.png",
+      tech: ["Next.js", "React", "Tailwind CSS"],
+      liveUrl: "https://keynull.vercel.app/",
+    },
+    {
+      title: "Shivlam – AR/BIM Development Studio",
+      description:
+        "Built the Shivlam studio website covering AR/BIM, apps, and product engineering. Created an interactive Three.js WebGL BIM viewer with rotatable structure, wall, and color-coded MEP layers.",
+      image: "/images/shivlam.png",
+      tech: ["Next.js", "React", "Tailwind CSS", "Three.js"],
+      liveUrl: "https://shivlam.com/",
+    },
+    {
+      title: "Delta ARBIM – AR Construction Overlay",
+      description:
+        "Developed the marketing site for an IFC-first AR BIM platform. Built a Canvas 2D BIM overlay demo with toggleable structure, wall, HVAC, water, and electrical layers plus clash detection.",
+      image: "/images/deltaarbim.png",
+      tech: ["Next.js", "React", "Tailwind CSS", "Three.js"],
+      liveUrl: "https://deltaarbim.tech/",
+    },
   ];
 
   return (
@@ -61,7 +77,9 @@ export default function Projects() {
       className="relative before:content-[''] before:block before:h-20 before:-mt-20 before:invisible bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 pt-20 px-6"
     >
       <div className="max-w-6xl mx-auto">
-        <p className="text-sky-500 font-semibold uppercase text-center">Visit my portfolio</p>
+        <p className="text-sky-500 font-semibold uppercase text-center">
+          Visit my portfolio
+        </p>
 
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 mt-2">
           My Portfolio
@@ -96,7 +114,7 @@ export default function Projects() {
 
                 {/* Tech stack */}
                 <p className="text-xs uppercase text-sky-600 tracking-wide mb-2 font-semibold">
-                  {p.tech.join(', ')}
+                  {p.tech.join(", ")}
                 </p>
 
                 {/* Title */}
